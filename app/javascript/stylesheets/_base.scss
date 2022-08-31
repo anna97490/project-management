@@ -1,0 +1,47 @@
+.project-card {
+  transition: background-color 0.5s ease;
+  &:hover {
+    background-color: #f7f7f7;
+  }
+}
+
+h2 {
+  color: #ff6f69;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color:	#88d8b0 !important;
+  border-color: transparent !important;
+}
+
+svg {
+  overflow: unset !important;
+}
+
+svg text {
+  font-family: Lora;
+  letter-spacing: 8px;
+  stroke: 	#96ceb4;
+  fill: #ff6f69;
+  font-size: 22px;
+  font-weight: 200;
+  stroke-width: 1;
+  animation: textAnimate 4s infinite alternate;
+}
+
+@keyframes textAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill: #ffcc5c;
+
+  }
+
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: 	#88d8b0;
+  }
+}
